@@ -1,0 +1,13 @@
+h1 {
+    color: cornflowerblue;
+}
+.color-text {
+    color: red;
+}
+#dooby-doo{
+    color:brown;
+}
+.fruits li {
+    color: blue;
+    border: 1 px solid green;
+}

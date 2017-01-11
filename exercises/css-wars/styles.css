@@ -1,0 +1,23 @@
+body {
+    background-color: #111111;
+}
+h1 {
+    color: #E2E80F;
+    font-size: 175%;
+    text-align: center;
+}
+p {
+    color: #eeeeee;
+    text-align: center;
+    font-size: 125%;
+    line-height: 25px;
+}
+p.credits span {
+    color: dodgerblue;
+    text-decoration: underline;
+    cursor: pointer
+}
+#film-description {
+    font-size: .95em;
+    font-style: italic;
+}

@@ -1,0 +1,19 @@
+.nav-bar-1{
+    border-style: solid;
+    display: inline-block;
+    position: fixed;
+    left: 0px;
+}
+.nav-bar-2{
+    border-style: solid;
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+}
+span{
+display: block; 
+}
+p {
+    height: 10000px;
+    z-index: -1;
+}

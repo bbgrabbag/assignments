@@ -1,0 +1,28 @@
+h1{
+    color: darkgreen;
+}
+.header {
+    font-family: "georgia";
+    text-align: center;
+    width: 750px;
+}
+p {
+    line-height: 25px;
+}
+.link-text {
+text-transform: uppercase;
+}
+a {
+    text-decoration:none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    float: left;  
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+section{
+    clear: left;
+}

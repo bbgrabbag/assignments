@@ -1,0 +1,13 @@
+img {
+    float: left;
+    padding: 10px;
+    clear:both;
+}
+h2 {
+    display: block;
+    font-style: italic;
+}
+.column {
+    column-count: 3;
+    display: inline-block;
+}
