@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.baddies{
+    line-height: 275%;
+}
+.koopa-troopa-profile{
+    background-image: url("Koopa_Troopa.jpg");
+    background-repeat: no-repeat;
+    background-size: 200px auto;
+    background-position: right;
+    position: relative;
+    display: inline-block;
+    padding-left: 100px;
+    width: 33%;
+    height: 200px;
+    list-style-type: none;
+}
+.koopa-troopa-profile .name{
+    text-align: center;
+} 
+.goomba-profile{
+    background-image: url("goomba.jpg");
+    background-repeat: no-repeat;
+    background-size: 200px auto;
+    background-position: right;
+    position: relative;
+    display: inline-block;
+    padding-left: 100px;
+    width: 33%;
+    height: 200px;
+    list-style-type: none;
+}
+.goomba-profile .name{
+    text-align: center;
+}
+.boo-profile {
+    background-image: url("boo.jpg");
+    background-repeat: no-repeat;
+    background-size: 175px auto;
+    background-position: right;
+    position: relative;
+    display: inline-block;
+    padding-left: 100px;
+    width: 33%;
+    height: 200px;
+    list-style-type: none;
+}
+.boo-profile .name{
+    text-align: center;
+}
+footer ul {
+    border-top: 3px solid black;
+    display: block;
+    text-align: center;
+    list-style-type: none;
+}
