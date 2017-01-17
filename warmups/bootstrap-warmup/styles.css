@@ -1,0 +1,21 @@
+.jumbotron {
+    display: inline-block: ;
+    text-align: center;
+}
+.jumbotron p a {
+    display: inline: ;
+    text-align: center;
+}
+#learn-more {
+    background-color: #001080;
+}
+#buy {
+    background-color: #005080;
+}
+#sell {
+    background-color: #007080
+}
+
+footer:hover {
+    cursor: pointer;
+}

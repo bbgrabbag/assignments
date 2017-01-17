@@ -1,17 +1,22 @@
-//There are 6 input variables: pricing and total-caught.
-//There are 4 output variables: individual-total and total-price.
-//individual-totals are equal to each div's pricing * total-caught
-//total price is equal to the addSum of div's individual-total.
-
-document.getElementById("koopa-pricing").textContent = 3;
-document.getElementById("koopa-total-caught").textContent = 7;
-document.getElementById("koopa-individual-total").textContent = document.getElementById("koopa-pricing").textContent * document.getElementById("koopa-total-caught").textContent;
-
-document.getElementById("goomba-pricing").textContent = 1;
-document.getElementById("goomba-total-caught").textContent = 8;
-document.getElementById("goomba-individual-total").textContent = document.getElementById("goomba-pricing").textContent * document.getElementById("goomba-total-caught").textContent;
-
+//set the prices of each baddie:
+document.getElementById("koopa-pricing").textContent = 5;
+document.getElementById("goomba-pricing").textContent = 3;
 document.getElementById("boo-pricing").textContent = 9;
-document.getElementById("boo-total-caught").textContent = 2;
-document.getElementById("boo-individual-total").textContent = document.getElementById("boo-pricing").textContent * document.getElementById("boo-total-caught").textContent;
 
+function total() {
+    document.getElementById("koopa-individual-total").textContent = Number(document.getElementById("koopa-pricing").textContent) * Number(document.getElementById("koopa-total-caught").value);
+
+    document.getElementById("goomba-individual-total").textContent = Number(document.getElementById("goomba-pricing").textContent) * Number(document.getElementById("goomba-total-caught").value);
+
+    document.getElementById("boo-individual-total").textContent = Number(document.getElementById("boo-pricing").textContent) * Number(document.getElementById("boo-total-caught").value);
+
+    document.getElementById("total-price").textContent =
+        Number(document.getElementById("koopa-individual-total").textContent) + Number(document.getElementById("goomba-individual-total").textContent) + Number(document.getElementById("boo-individual-total").textContent);
+}
+
+document.getElementById("koopa-total-caught").addEventListener("change", total);
+
+document.getElementById("goomba-total-caught").addEventListener("change", total);
+
+
+document.getElementById("boo-total-caught").addEventListener("change", total);
