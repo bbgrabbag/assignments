@@ -1,0 +1,1 @@
+The exercise folder is a collection of small to medium-sized challenges designed to improve javascript, CSS, and HTML abilities. Programming knowledge such as best practices, coding conventions, and other developer-specific skills are also challenged here.
