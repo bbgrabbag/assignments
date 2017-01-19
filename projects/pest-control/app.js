@@ -18,5 +18,4 @@ document.getElementById("koopa-total-caught").addEventListener("change", total);
 
 document.getElementById("goomba-total-caught").addEventListener("change", total);
 
-
 document.getElementById("boo-total-caught").addEventListener("change", total);

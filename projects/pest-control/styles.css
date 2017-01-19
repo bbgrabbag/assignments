@@ -1,32 +1,61 @@
 * {
     box-sizing: border-box;
 }
-h1{
+body{
+    background-image:url(background.jpg);
+}
+h1, h3{
     text-align: center;
+    font-family: fantasy;
+    font-weight: 900;
 }
 .baddies{
     line-height: 275%;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    
 }
+.name{
+    font-family: cursive;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+input{
+    display: inline;
+    height: 20px;
+    border: 1px solid #005040;
+    border-radius: 30%;
+    
+}
+
 .koopa-troopa-profile{
     background-image: url("Koopa_Troopa.jpg");
     background-repeat: no-repeat;
     background-size: 200px auto;
     background-position: right;
+    background-color: white;
+    border-radius: 50%;
     position: relative;
     display: inline-block;
     padding-left: 100px;
     width: 33%;
     height: 200px;
     list-style-type: none;
+    
 }
 .koopa-troopa-profile .name{
     text-align: center;
 } 
+input {
+    width: 30px;
+}
 .goomba-profile{
     background-image: url("goomba.jpg");
     background-repeat: no-repeat;
     background-size: 200px auto;
     background-position: right;
+    background-color: white;
+    border-radius: 50%;
     position: relative;
     display: inline-block;
     padding-left: 100px;
@@ -42,6 +71,8 @@ h1{
     background-repeat: no-repeat;
     background-size: 175px auto;
     background-position: right;
+    background-color: white;
+    border-radius: 50%;
     position: relative;
     display: inline-block;
     padding-left: 100px;
@@ -52,9 +83,13 @@ h1{
 .boo-profile .name{
     text-align: center;
 }
+
 footer ul {
     border-top: 3px solid black;
     display: block;
     text-align: center;
     list-style-type: none;
+    font-family: fantasy;
+    font-weight: 900;
+    
 }

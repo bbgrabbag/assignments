@@ -1,0 +1,10 @@
+#box {
+    display: block;
+    background-color: white;
+    border: 3px solid black;
+    height: 400px;
+    width: 400px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

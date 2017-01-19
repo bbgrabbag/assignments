@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="travel-form" name = "travel-form">
+        <p>Travel Form</p>
+        <input type="text" name= "first-name" placeholder="First Name">
+        <br/>
+        <input type="text" name="last-name" placeholder="Last Name">
+        <br/>
+        <input type="number" name="age" placeholder="Age">
+        <br>
+        <input type="radio" name="gender" id="gender-male" value ="Male">
+        <label for="gender-male">Male</label>
+        <br>
+        <input type="radio" name="gender" id="gender-female" value ="Female">
+        <label for="gender-female">Female</label>
+        <br/>
+        <label for="location">Location: </label>
+        <select name="location" id="location">
+           <option value=""></option>
+            <option value="Heber" name="Heber">Heber</option>
+            <option value="Park City" name="Park City">Park City</option>
+            <option value="Coalville" name="coalville">Coalville</option>
+        </select>
+        <br>
+        <label for="diet-restrict">Dietary Restrictions: </label>
+        <select name="diet-restrict" id="diet-restrict">
+           <option value=""></option>
+            <option value="Red Meat" name="red-meat">Red Meat</option>
+            <option value="Hipster Juice" name="hipster-juice">Hipster Juice</option>
+            <option value="Assorted Green Foliage" name="assorted-green-foliage">Assorted Green Foliage</option>
+        </select>
+        <br>
+        <button type="button" name ="button">Submit</button>
+    </form>
+</body>
+<script src ="app.js"></script>
+</html>

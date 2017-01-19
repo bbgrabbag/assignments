@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    font-size: 0;
+}
+.box{
+    height: 125px;
+    border-left: 10px solid white;
+border-right: 10px;
+    border-top: 5px;
+    border-bottom: 5px;
+}
+.pink{
+    background-color: #F5C6D6;
+}
+.red{
+    background-color: #EE2E84;
+}
+.blue{
+    background-color: #85CFD8;
+}
+.green{
+    background-color: #8DC63F;
+}
+.orange{
+    background-color: #E76E34;
+} 
