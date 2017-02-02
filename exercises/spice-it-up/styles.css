@@ -1,0 +1,46 @@
+@font-face {
+    font-family: marioFont;
+    src: url("Fonts/SuperMario256.ttf");
+}
+h1, h2{
+    font-family: marioFont;
+    color: #eb1f22;
+    margin: 0;
+}
+h2{
+    padding: 10px;
+}
+footer, header{
+    background-color: #ffda09;
+}
+p {
+    color: #eb1f22;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 900;
+}
+.text-center {
+    background-color: #eb1f22;
+}
+
+#mushroom{
+    max-height: 60px;
+    padding: 5px;
+}
+.header{
+    margin: 0;
+}
+h1 {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    font-size: 40px;
+}
+#luigi{
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 2s;
+}
+#luigi:hover{
+    opacity: 1;
+}

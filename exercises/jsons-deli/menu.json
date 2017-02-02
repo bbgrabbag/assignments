@@ -1,0 +1,66 @@
+{
+    "appetizers": [
+        {
+            "name": "Cereal",
+            "ingredients": ["Milk", "Lucky Charms"],
+            "description": "Sugar-loaded breakfast food"
+        },
+
+        {
+            "name": "Calamari",
+            "ingredients": ["Squid", "Batter", "Spices"],
+            "description": "Fatty Seafood"
+        }],
+    
+    "coldSandwiches": [
+        {
+            "name": "BLT",
+            "ingredients": ["Bacon", "Lettuce", "Tomato"],
+            "description": "Classic lunch meal"
+        },
+
+        {
+            "name": "Tuna",
+            "ingredients": ["Tuna", "Wheat Bread", "Mayo"],
+            "description": "Crunchy and filling"
+        }],
+    
+    "hotSandwiches": [
+        {
+            "name": "Meatball",
+            "ingredients": ["beef", "hoagie", "sauce"],
+            "description": "An American classic"
+        },
+
+        {
+            "name": "Philly Cheese Steak",
+            "ingredients": ["Cheese", "Philly", "Steak"],
+            "description": "A Philly Classic"
+        }],
+    
+    "desserts": [
+        {
+            "name": "Cheesecake",
+            "ingredients": ["Sugar", "Sugar", "Chocolate"],
+            "description": "Classic dessert"
+        },
+
+        {
+            "name": "Apple Pie",
+            "ingredients": ["Apple", "Pie"],
+            "description": "How Gram Gram made it"
+        }],
+    
+    "drinks": [
+        {
+            "name": "Coke",
+            "ingredients": ["sugar", "Carbonation"],
+            "description": "Enjoy a Coke"
+        },
+
+        {
+            "name": "Coffee",
+            "ingredients": ["Coffee grounds", "hot water"],
+            "description": "Wake up with Folgers"
+        }]
+}

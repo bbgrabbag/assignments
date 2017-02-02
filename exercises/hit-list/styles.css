@@ -1,0 +1,17 @@
+img {
+    width: 100%;
+    padding: 10%;
+}
+header{
+    background-image: url(images/godfather-marlon-brando-corleone-wide.jpg);
+        background-size: cover;
+    color:aliceblue;
+    text-align: center;
+}
+html {
+    background-color: crimson;
+    background-size: cover;
+}
+span{
+    padding: 5%;
+}

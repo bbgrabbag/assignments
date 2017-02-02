@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>High-Score-Haven</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        
+            <h1>High Score Haven</h1>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <form>
+                    <div class="row">
+                        <div class ="col-xs-12 col-md-12"><input type="text" name="first-name" placeholder="First Name" id="name"></div>
+                        <div class ="col-xs-12 col-md-12"><input type="text" name="game" placeholder="Game" id="game"></div>
+                        <div class ="col-xs-12 col-md-12"><input type="date" name="date" placeholder="Set On: mm/dd/yyyy" id="date"></div>
+                        <div class ="col-xs-12 col-md-12">
+                        <select id="game-type" name="game-type" placeholder = "Game Type">
+                            <option value="Game Type" id="none">Game Type</option>
+                            <option value="timed" id="timed">Timed</option>
+                            <option value="point-based" id="point-based">Point-based</option>
+                        </select></div>
+                        <div class ="col-xs-12 col-md-12"><input type="text" placeholder="High Score" id="high-score"></div>
+                        <div class ="col-xs-12 col-md-12"><label for="checkbox">Care for some trash talk?</label>
+                        <input type="checkbox" name="checkbox" id="trash-talk">
+                        <button type="button" class="button" name="submit" id="submit">Submit</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class ="row">
+        <div class ="col-xs-12 text-center">
+        <table class="table table-bordered table-striped table-condensed">
+        <tr>
+            <thead>
+                <th class ="text-center">Name</th>
+                <th class ="text-center">Game</th>
+                <th class ="text-center">Date Set</th>
+                <th class ="text-center">Game Type</th>
+                <th class ="text-center">High Score</th>
+                <th class ="text-center">Trash Talk</th>
+            </thead>
+        </tr>
+
+    </table>
+    </div>
+    </div>
+  
+
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
+<script src="app.js"></script>
+
+</html>

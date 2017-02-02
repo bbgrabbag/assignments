@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: linear-gradient(to bottom, #fefef0, #3c2215);
+}
+
+body {
+    background: linear-gradient(to top, #fefef0, #3c2215);
+    border-bottom: 5px double black;
+    border-top: 5px double black;
+}
+
+.container {
+    background-color: white;
+    border-top: 2px solid #080a0e;
+    border-left: 2px solid #080a0e;
+    border-right: 2px solid #080a0e;
+}
+
+ul {
+    list-style: none;
+    line-height: 100%;
+}
+
+li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+#background-img {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+#img-logo {
+    width: 19%;
+    height: auto;
+    border-bottom-right-radius: 50%;
+    border: 2px solid #080a0e;
+    display: block;
+
+}
+
+.thumbnail {
+    position: relative;
+    border-bottom: 2px solid #080a0e;
+}
+
+#overlay h1 {
+    font-family: "optima-regular";
+    padding: 0px;
+    font-size: 60px;
+    letter-spacing: 11px;
+    color: #fefef0;
+}
+
+.caption {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    top: 0;
+}
+
+#overlay {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right:0;
+}
+
+footer {
+    margin-top: 2px;
+    padding: 8px;
+    border-top: 2px solid black;
+}
+
+footer p {
+    letter-spacing: 3px;
+}
+
+.blog-post {
+    padding: 15px;
+    border-bottom: 1px dotted black;
+    border-right: 1px dotted black;
+}
+
+.form {
+    padding-bottom: 15px;
+    position: absolute;
+    float: right;
+    border-bottom: 1px dotted black;
+}
+
+label {
+    display: inline;
+}
+
+nav {
+    border-bottom: 2px double black;
+}
+
+h3{
+    font-size: 30px;
+    font-family: "TrebuchetMS";
+    color: brown;
+}
+a {
+    color:brown;
+}
+a:hover {
+    text-decoration: none;
+}
+#lyft-img{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#uber-img {
+    width: 100%;
+    padding-bottom:15px;
+}
+
+#lyft-info, #uber-info{
+    font-size: 20px;
+}
+
+@media (max-width: 515px){
+    #overlay h1{
+        font-family: "optima-regular";
+    padding: 0px;
+    font-size: 30px;
+    letter-spacing: 11px;
+    color: #fefef0;
+    }
+}

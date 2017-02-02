@@ -1,0 +1,24 @@
+.col-xs-12 {
+    padding: 10px;
+}
+li {
+    list-style: none;
+}
+body {
+    background-image: url(images/tfsufr9o-bs-john-wilson.jpg);
+    background-size: cover;
+}
+h1 {
+    font-family: "STYuanti-TC-Light";
+    letter-spacing: 8px;
+    color: #804033;
+}
+li {
+    color:gainsboro;
+    padding : 3px;
+}
+.button{
+    background-color: ivory;
+    color: gray;
+    font-family: "BodoniSvtyTwoITCTT-Book";
+}

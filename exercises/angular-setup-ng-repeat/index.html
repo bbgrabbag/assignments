@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body ng-controller="mainCtrl">
+
+    <table>
+        <tr>
+            <th>Handle</th>
+            <th>Rank</th>
+            <th>Clan Members</th>
+        </tr>
+        <tr ng-repeat="victim in player.kills">
+            <td>{{victim.handle}}</td>
+            <td>{{victim.rank}}</td>
+            <td>
+                <ul>
+                    <li ng-repeat="member in victim.clan">{{member}}
+                    </li>
+                </ul>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
