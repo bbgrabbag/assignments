@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app= "myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ugly Things</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller= "mainCtrl">
+    <div class="container">
+       <h1>YouSoUgly.com</h1>
+       <hr>
+        <div class="row">
+            <form name="form" class="form-group">
+                <div class="col-xs-12 col-md-3 col-sm-3">
+                    <input class ="form-group" type="text" name="title" placeholder="Title" ng-model="newPost.title">
+                   
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-3">
+                    <input class="form-group" type="text" name="imageurl" placeholder="Image URL" ng-model= "newPost.imageurl">
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-3">
+                    <input type ="text" class ="form-group" name="description" placeholder="Description" ng-model="newPost.description">
+                </div>
+                <div class ="col-xs-12 col-md-3 col-sm-3"><button class="button form-group" type="btn btn-primary" ng-click= "submit()">Submit</button></div>
+            </form>
+            <hr>
+        </div>
+        <div class="row" name ="output">
+            <div class ="col-xs-12 col-md-4" ng-repeat="item in post track by $index">
+                <h2>{{item.title}}</h2>
+                <img ng-src="{{item.imageurl}}">
+                <p>{{item.description}}</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

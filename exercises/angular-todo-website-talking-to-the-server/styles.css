@@ -1,0 +1,134 @@
+html {
+ 
+    background-image: url(images/rlw-uc03gwc-glenn-carstens-peters.jpg);
+    opacity: .85;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    background: none;
+}
+
+#todoPic {
+    padding: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    border: 3px solid azure;
+    border-radius: 50%;
+}
+#output {
+    background: linear-gradient(bottom, plum, #EEEEEE 175px)
+}
+
+form {
+    background: -webkit-linear-gradient(bottom, #ffffff, #EEEEEE 175px);
+    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: LaoMN;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #09C;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #999;
+    border: inset 1px solid #333;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    opacity: .9;
+}
+
+@media (min-width:500px) {
+    form {
+        background: -webkit-linear-gradient(bottom, #ffffff, #EEEEEE 175px);
+        background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+        background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+        margin: auto;
+        position: relative;
+        width: 75%;
+        height: 100%;
+        font-family: LaoMN;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: bold;
+        color: #09C;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid #999;
+        border: inset 1px solid #333;
+        -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        opacity: .9;
+    }
+}
+
+@media (min-width:900px) {
+    form {
+        background: -webkit-linear-gradient(bottom, #ffffff, #EEEEEE 175px);
+        background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+        background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+        margin: auto;
+        position: relative;
+        width: 50%;
+        height: 100%;
+        font-family: LaoMN;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: bold;
+        color: #09C;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid #999;
+        border: inset 1px solid #333;
+        -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        opacity: .9;
+    }
+}
+
+input {
+    width: 100%;
+    display: block;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    height: 25px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    background: white;
+    padding: 12px 22px;
+    border: 2px solid #0099cc;
+    color: #0099cc;
+    border-radius: 10px;
+}
+
+.has-error {
+    background-color: firebrick;
+}
+.completed-todo {
+    text-decoration: line-through;
+    color:#777;
+}
+img {
+    max-width:100%;
+    height: auto;
+}
+#checkbox {
+    height: 0 !important;    
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body ng-controller="mainCtrl">
+    <div class="container">
+        <div class=row>
+            <div class="col-xs-6 text-center">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <button class="btn btn-primary" ng-click = "bluePushButton()">WIN!</button>
+                        <h3>{{ blueNumber }}</h3></div>
+                </div>
+            </div>
+            <div class="col-xs-6 text-center">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <button class="btn btn-danger" ng-click ="redPushButton()">WIN!</button>
+                        <h3>{{ redNumber }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="blue-service.js"></script>
+    <script src="red-service.js"></script>
+</body>
+
+</html>

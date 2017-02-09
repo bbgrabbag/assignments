@@ -1,12 +1,10 @@
-var app = angular.module("myApp", []);
-app.controller("mainCtrl", function ($scope, $http){
-               
-        $http.get("http://api.vschool.io:6543/hitlist.json")
-.then(function(response){
-            $scope.hitList = response.data;
-    
-            
-            
-            
-});
-               });
+angular.module("myApp", [])
+    .controller("mainCtrl", ["httpService", "$scope", function (httpService, $scope) {
+
+            httpService.getRequest()
+            .then(function(hitList){
+                $scope.hitList = hitList;
+            });
+
+}
+               ]);

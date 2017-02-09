@@ -1,21 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" ng-app ="myApp">
+<html lang="en" ng-app="myApp">
+
 <head>
     <meta charset="UTF-8">
     <title>To Do List</title>
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <form ng-controller ="mainCtrl">
-       <input type="text" placeholder ="First Name" ng-model ="">
-        <input type="text" name ="newItem" placeholder ="New Item" ng-model ="newItem">
-        <button type ="button" name ="addToList" ng-click ="submitList()">Add</button>
-    </form>
-    <ul>
-        
-    </ul>
-    
+
+<body ng-controller="mainCtrl">
+    <div class="container" id="input">
+        <div class="row">
+            <div class="col-xs-10 col-offset-xs-1">
+                <form name="todo" ng-submit="submitForm(todo.$valid)" novalidate>
+                    <h2>To Do List</h2>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <input type="text" name="title" placeholder="New To Do" ng-model="newTodo.title" ng-class="{ 'has-error' : todo.title.$invalid && !todo.title.$pristine }" required>
+                                <p ng-show="todo.title.$invalid && !todo.title.$pristine" class="help-block">You must enter a name!</p>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="imgUrl" placeholder="Image URL" ng-model="newTodo.imgUrl">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="price" placeholder="Price" ng-model="newTodo.price">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="textbox" name="description" placeholder="Description" ng-model="newTodo.description" ng-class="{'has-error' : todo.description.$invalid && !todo.description.$pristine}" required>
+                                <p ng-show="todo.description.$invalid && !todo.description.$pristine" class="help-block">You must enter a description!</p>
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-6 col-offset-6">
+                            <button type="button" class="btn btn-primary" name="submit" ng-disabled="todo.$invalid" ng-click="submitList(newTodo)">Add</button>
+
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" id="output">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="item in todos track by $index">
+
+                <div id="todoPic" style="background-image: url({{item.imgUrl}})">
+                    <button class="btn btn-danger glyphicon glyphicon-trash" ng-click="deleteItem(item, $index)"></button>
+                    <ul style="text-align: center; list-style-type: none; padding: 15px; line-height:75px; font-size: 24px">
+
+                        <li>
+                            <span style="text-align: center; background-color: #093845; color: white; opacity: .7; border-radius: 20px; padding: 7px;">{{item.title}}</span></li>
+                        <li>
+                            <span style="text-align: center; background-color: #093845; color: white; opacity: .7; border-radius: 20px; padding: 7px;">${{item.price}}</span></li>
+                        <li>
+                            <span style="text-align: center; background-color: #093845; color: white; opacity: .7; border-radius: 20px; padding: 7px;">{{item.description}}</span></li>
+                    </ul>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
