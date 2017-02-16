@@ -1,0 +1,11 @@
+<h1>Profile Page</h1>
+<!--user name, season ladder rank, mmr, match history, jpg-->
+
+
+<div ng-controller ="profileCtrl">
+
+<div ng-hide ="!isLoggedIn"><img ng-src="{{imgUrl}}">
+<h3>Username: {{username}}</h3>
+<h3>Ladder Rank: {{ladderRank}}</h3>
+<h3>Win Rate: {{winRate}}</h3></div>
+</div> 

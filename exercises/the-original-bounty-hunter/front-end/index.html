@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body ng-app = "serverApp">
+   <div ng-controller = "postCtrl">
+       <h1>{{test}}</h1>
+<!--    you are an evil gangster who is selling bounties to any willing hunter. It is up to you which bounties you buy and how much to sell them for. -->
+  
+  <form name ="post"></form>
+  <input type="text" ng-model = "newBounty.name" name ="name"placeholder ="Target Name">
+  <input type="text" ng-model = "newBounty.reward" name = "reward" placeholder= "Bounty Reward">
+  <input type="text" ng-model = "newBounty.type" name = "type" placeholder = "Bounty Type">
+  <button type = "button" ng-click = "postBounty(newBounty.name, newBounty.reward, newBounty.type)">Post Bounty</button>
+   </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="httpservice.js"></script>
+    
+</body>
+</html>

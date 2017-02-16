@@ -1,28 +1,43 @@
 angular.module("myApp", [])
-.controller("mainCtrl", ["$scope", "httpService", function ($scope, httpService) {
-    
-        $scope.todos = httpService.getRequest();
+    .controller("mainCtrl", ["$scope", "httpService", function ($scope, httpService) {
 
+        httpService.getRequest("http://api.vschool.io/benturner/todo").then(function (gotten) {
+                $scope.todos = gotten.data;
+            },
+            function (gotten) {
+                console.log("There was an error: " + gotten.status + " " + gotten.statusText);
+            });
 
-    $scope.submitList = function (){
-        $scope.todos = httpService.postRequest($scope.newTodos).then(
-        function(){
-            return httpService.getRequest($scope.newTodos).then(function (response){
-               $scope.newTodo = {};
-        $scope.todo.title.$pristine = true;
-            $scope.todo.description.$pristine = true 
-            })
-            })
-    }
+        $scope.submitList = function (submitData) {
+            httpService.postRequest("http://api.vschool.io/benturner/todo/", submitData).then(
 
-       
-    $scope.deleteItem = function (item, $index) {
-        
-        $http.delete("http://api.vschool.io/benturner/todo/" + item._id).then(function (response) {
-            $scope.todos.splice($index, 1);
-        },
-            function(response){
-            console.log ("There was an error: " + response.status + " " + response.statusText)
+                function (posted) {
+                    httpService.getRequest("http://api.vschool.io/benturner/todo/").then(
+
+                        function (gotten) {
+                            $scope.todos = gotten.data
+                            $scope.newTodo = {};
+                            $scope.todo.title.$pristine = true;
+                            $scope.todo.description.$pristine = true;
+                        },
+                        function (gotten) {
+                            console.log("There was an error: " + gotten.status + " " + gotten.statusText);
+                        }
+                    )
+                },
+
+                function (posted) {
+                    console.log("There was an error: " + posted.status + " " + posted.statusText);
+                }
+            )
+        };
+
+        $scope.deleteItem = function (item, $index) {
+            httpService.deleteRequest("http://api.vschool.io/benturner/todo/" + item._id).then(function (deleted) {
+                    $scope.todos.splice($index, 1);
+                },
+                function (deleted) {
+                    console.log("There was an error: " + response.status + " " + response.statusText)
+                })
         }
-
-)}]);
+    }]);

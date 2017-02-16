@@ -1,0 +1,36 @@
+<h1>Home Page</h1>
+
+<!--background image-->
+
+
+
+<!--Form needs to:
+    validate real bnet id and username with OAUTH
+    not be empty
+    provide error messages if not valid
+    store info to web storage
+    hide the input fields upon completion
+    have a controller
+    -->
+<div ng-controller ="formCtrl">
+    <form class ="form-group" ng-hide ="submitted" name ="form" novalidate>
+   <input class ="form-control" type="text" name = "firstName" ng-model = "user.firstName" placeholder = "First Name" ng-class ="{'has-error': form.firstName.$invalid && !form.firstName.$pristine}" required>
+   <p ng-show="form.firstName.$invalid && !form.firstName.$pristine" class ="help-block">Name is Required!</p>
+    <input class ="form-control" type="text" name = "bnetId" ng-model = "user.bnetId" placeholder ="Battle.net ID" ng-class ="{'has-error': form.bnetId.$invalid && !form.bnetId.$pristine}" required>
+    <p ng-show="form.bnetId.$invalid && !form.bnetId.$pristine" class ="help-block">ID is Required!</p>
+    <input class ="form-control" type="text" name ="bnetUserName" ng-model ="user.bnetUserName" placeholder ="Battle.net Username" ng-class ="{'has-error': form.bnetUserName.$invalid && !form.bnetUserName.$pristine}"required>
+    <p ng-show="form.bnetUserName.$invalid && !form.bnetUserName.$pristine" class ="help-block">User Name is Required!</p>
+    <button class ="btn btn-primary"ng-disabled ="form.$invalid" ng-click ="submitForm(user.bnetId, user.bnetUserName)">Submit</button>
+</form>
+
+
+<panel ng-show = "submitted">
+<!--    show upon completion-->
+
+<h3>You are now signed in as:</h3>
+<p>Name: {{user.firstName}}</p>
+<p>Username: {{user.bnetUserName}}</p>
+<p>ID: {{user.bnetId}}</p>
+<h3>See your <a href="#!/profile-info">profile stats</a>!</h3>
+    </panel>
+</div>

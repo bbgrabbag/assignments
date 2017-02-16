@@ -1,0 +1,84 @@
+.jumbotron {
+    border-radius: 10px;
+    background: none;
+}
+#footer {
+    height: 35px;
+    background-color: black ;
+}
+.container {
+    border-radius: 10px;
+    background-color: black;
+}
+#title{
+   font-family: "DFWaWaSC-W5";
+}
+#character-list{
+    border-radius: 10px;
+    font-family: "DFWaWaSC-W5";
+    padding-top: 30px;
+}
+
+#character-profile{
+    margin-bottom: 40px;
+    border-radius: 10px;
+    font-family: "DFWaWaSC-W5";
+    background-color: black;
+    border: 10px solid white;
+    position: relative;
+}
+p{
+    color: white;
+}
+h1, h3 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 26px;
+    text-align:center;
+}
+img{
+    border-radius: 10px;
+    border: 3px solid white;
+}
+input{
+    font-family: "DFWaWaSC-W5";
+}
+.btn{
+    font-family: "DFWaWaSC-W5";
+    background: none;
+    border: 3px solid white !important;
+    color: white;
+    letter-spacing: 2px;
+}
+.btn:hover{
+    background: inherit !important;
+    background-color: white !important;
+    color: black !important;
+    font-weight: 500;
+}
+.btn:visited{
+    background: inherit !important;
+    background-color: white !important;
+    color: black !important;
+    font-weight: 500;
+}
+.btn:active{
+    background: inherit !important;
+    background-color: white !important;
+    color: black !important;
+    font-weight: 500;
+}
+
+.btn:focus{
+   background: none;
+    border: 3px solid white !important;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#char-img{
+    border-radius: 10px;
+    width: 100%;
+    height:auto;
+    float: right;
+}
