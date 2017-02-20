@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
-<body ng-app = "serverApp">
-   <div ng-controller = "postCtrl">
-       <h1>{{test}}</h1>
-<!--    you are an evil gangster who is selling bounties to any willing hunter. It is up to you which bounties you buy and how much to sell them for. -->
-  
-  <form name ="post"></form>
-  <input type="text" ng-model = "newBounty.name" name ="name"placeholder ="Target Name">
-  <input type="text" ng-model = "newBounty.reward" name = "reward" placeholder= "Bounty Reward">
-  <input type="text" ng-model = "newBounty.type" name = "type" placeholder = "Bounty Type">
-  <button type = "button" ng-click = "postBounty(newBounty.name, newBounty.reward, newBounty.type)">Post Bounty</button>
-   </div>
-    
-    
+
+<body ng-app="serverApp">
+    <div ng-controller="mainCtrl">
+
+        <form name="post"></form>
+        <input type="text" ng-model="newBounty.name"  placeholder="Target Name">
+        <input type="text" ng-model="newBounty.reward"  placeholder="Bounty Reward">
+        <input type="text" ng-model="newBounty.type"  placeholder="Bounty Type">
+        <button type="button" ng-click="postBounty(newBounty)">Post New Bounty</button>
+
+        <h3>Current Bounties:</h3>
+        <div ng-repeat ="bounty in showBounties track by bounty.id">
+            <div>
+            <ul>
+                <li>Name: {{bounty.name}}</li>
+                <li>Reward: {{bounty.reward}}</li>
+                <li>Type: {{bounty.type}}</li>
+                <li>ID: {{bounty.id}}</li>
+            </ul>
+            </div>
+      
+      <form name ="edit">
+    <input type="text" ng-model="edittedBounty.name" placeholder="{{bounty.name}}">
+    <input type="text" ng-model="edittedBounty.reward" placeholder="{{bounty.reward}}">
+    <input type="text" ng-model="edittedBounty.type" placeholder="{{bounty.type}}">
+    </form>
+      <button type ="button" ng-click = "editBounty(bounty.id, edittedBounty)">Edit</button>
+      
+     <button type="button" ng-click="deleteBounty(bounty.id)">Delete</button>
+</div>
+   
+   
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
     <script src="app.js"></script>
     <script src="httpservice.js"></script>
-    
+    <script src="bountyService.js"></script>
 </body>
+
 </html>
