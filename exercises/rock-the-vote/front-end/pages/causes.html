@@ -1,0 +1,19 @@
+<div controller="causesCtrl">
+
+    <div ng-repeat="issue in issues | orderBy: '-upvotes' track by issue.id">
+        <form action="">
+            <h3>{{issue.name}}</h3>
+            <h4>{{issue.description}}</h4>
+            <button class = "glyphicon glyphicon-thumbs-up" type="button" ng-click="addUpvote(issue.id, issue)"></button>
+            <span>: {{issue.upvotes}}</span>
+            <button  class = "glyphicon glyphicon-thumbs-down"type="button" ng-click="addDownvote(issue.id, issue)"></button>
+            <span>: {{issue.downvotes}}</span>
+            <textarea ng-model = "newInfo.comment"ng-keyup="$event.keyCode == 13 && addComment(issue.id, newInfo.comment, issue)"placeholder="Comment" name="userComment" id="userComment" cols="30" rows="5"></textarea>
+            <p ng-repeat = "comment in issue.comments track by $index">{{comment}}</p>
+            
+            <button type="button" class ="btn btn-danger glyphicon glyphicon-trash" ng-click ="deleteIssue(issue.id, issue)"></button>
+            
+            
+        </form>
+    </div>
+</div>

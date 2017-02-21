@@ -1,8 +1,17 @@
-angular.module("myApp", []);
+angular.module("myApp", ["ngRoute"]);
 angular.module("myApp")
-.controller("mainCtrl", ["$scope","httpService", function ($scope, httpService){
-    httpService.loadIssues("http://localhost:8000/issues")
-        .then(function(loaded){
-        $scope.issues = httpService.issues;
-    });
-}]);
+
+.config(function($routeProvider){
+    $routeProvider.when("/home", {
+        templateUrl: "pages/home.html",
+        controller: "homeCtrl"
+    })
+    .when("/causes", {
+        templateUrl: "pages/causes.html",
+        controller: "causesCtrl"
+    })
+    .otherwise({
+        templateUrl:"pages/home.html",
+        controller: "homeCtrl"
+    })
+});

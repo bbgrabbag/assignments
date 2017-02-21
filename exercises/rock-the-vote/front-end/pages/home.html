@@ -1,0 +1,7 @@
+<form controller ="homeCtrl">
+    <h2>Have a new political cause?</h2>
+    
+    <input type="text" ng-model="newIssue.name" placeholder="What is your cause?">
+    <input type="text" ng-model ="newIssue.description" placeholder ="Description">
+    <button type="button" ng-click="addNewCause(newIssue)"><a href="#!/causes">Post it!</a></button>
+</form>
