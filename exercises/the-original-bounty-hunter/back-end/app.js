@@ -10,7 +10,12 @@ app.use(bodyParser.json());
 var path = require ("path");
 app.use(express.static(path.join(__dirname, "..", "front-end")));
 
+
+
 var bounties = [];
+
+app.use("/bounties", require("./bounty-routes"));
+
 
 app.get("/bounties", function (req, res){
     console.log(bounties);

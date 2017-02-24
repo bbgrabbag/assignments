@@ -1,7 +1,8 @@
 http://coursework.vschool.io/rock-the-vote/
 
 tag: full stack application (minus database), express, put, get, post, delete
-goal: build a website that allows users to post, update, upvote, downvote and comment on political issues.
+goal: build a website that allows users to post, update, upvote, downvote and comment on political issues. 
+part 2: add a database with mongoDB
 
 
 updates:
@@ -14,3 +15,12 @@ Added downvote/upvote functionality that upates server database via put requests
 Having issues setting an input box to empty from within a ng-repeat.
 
 All four requests are functional. Just need to style now. Look into scopes
+
+notes:
+to add database: connect to mongodb via server.js
+create schema and register a model with mongoose. Schema tells mongoDB the nature of the object constructor. Model creates the object constructor. 
+tailor server.js to interact with mongoDB
+
+Future Improvements:
+hide/show comment buttons when writing new comment. 
+erase inner inputs upon submission

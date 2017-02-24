@@ -32,12 +32,14 @@ angular.module("starcraftApp")
         $scope.isLoggedIn = false;
         
         var stat = statService.profileStats;
+        console.log(stat);
         $scope.username = stat.displayName;
+        $scope.id = stat.id;
         $scope.ladderRank = stat.career.highest1v1Rank;
         $scope.imgUrl = statService.getRankImg($scope.ladderRank);
         $scope.wins = stat.season.stats[0].wins;
         $scope.gamesPlayed = stat.season.stats[0].games;
         $scope.winRate = statService.calcWinRate($scope.wins, $scope.gamesPlayed);
-
-
+        $scope.mainRace = stat.career.primaryRace;
+        $scope.swarmLvl =stat.swarmLevels.terran.level;
 }]);

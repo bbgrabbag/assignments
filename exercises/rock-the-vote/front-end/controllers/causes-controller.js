@@ -9,23 +9,23 @@ angular.module("myApp")
     $scope.addUpvote = function(id, issue){
         httpService.addUpvote(id, issue, "http://localhost:8000/issues/" + id)
         .then(function(added){
-            $scope.issues[issue.id] = issueDatabase.issues[issue.id]
+            $scope.issues[issue._id] = issueDatabase.issues[issue._id]
         })
     };
   
     $scope.addDownvote = function(id, issue){
         httpService.addDownvote(id, issue, "http://localhost:8000/issues/" + id)
         .then(function(added){
-            $scope.issues[issue.id] = issueDatabase.issues[issue.id]
+            $scope.issues[issue._id] = issueDatabase.issues[issue._id]
         })
     };
     
     $scope.addComment = function(id, newcomment, issue){
+        
         httpService.addComment(id, newcomment, issue, "http://localhost:8000/issues/" + id)
         .then(function(added){
-            $scope.issues[issue.id] = issueDatabase.issues[issue.id];
+            $scope.issues[issue._id] = issueDatabase.issues[issue._id];
         });
-         
     };
     
     $scope.deleteIssue = function(id, issue){

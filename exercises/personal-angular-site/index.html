@@ -12,37 +12,24 @@
     <div class="container">
         <div class="jumbotron">
             <!--           Basic header: title, menu button -->
-            <h1>The Risen Ashes</h1>
-            <h3>SC2 Clan Page</h3>
+            <h1 id="title">The Risen Ashes</h1>
+            <h3 id="subtitle">SC2 Clan Page</h3>
 
-            <nav id="menu-btn" class="navbar" role="navigation" ng-controller="menuBtn">
-                <div class="navbar-header">
-                    <div class="navbar-title">
-                        <button type="button" class="btn" ng-click="isCollapsed = !isCollapsed">
-                            <span class="caret"></span>
-                        </button>
-                    </div>
-
-                    <div uib-collapse="isCollapsed">
-                        <div class="panel-body">
-                            <ul>
-                                <li><a href="#!/home">Home</a></li>
-                                <li><a href="#!/profile-info">Profile Stats</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+           
+                    <h6><a id="home-btn"href="#!/home">HOME</a></h6>
+                    <h6><a id="stats-btn"href="#!/profile-info">PROFILE</a></h6>
+               
         </div>
+        <hr>
 
-            <ng-view>
-                <!--       ng-view: Home view, login page, profile info page-->
-            </ng-view>
+        <ng-view>
+            <!--       ng-view: Home view, login page, profile info page-->
+        </ng-view>
 
-            <section class="footer">
-                <!--           external links, privacy policy-->
-            </section>
-        
+        <section class="footer">
+            <!--           external links, privacy policy-->
+        </section>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
