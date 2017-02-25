@@ -1,6 +1,20 @@
 <div class="favCtrl">
-    <div ng-repeat ="pony in ponies">
-        <h3>Posted by: {{pony.name}},</h3><span>{{pony.username}}</span>
-        <img src="{{pony.imgUrl}}" alt="">
+    <div ng-repeat="pony in ponies track by pony._id">
+
+        <form ng-hide="!pony.editting">
+            <input type="text" ng-model="pony.edittedName">
+            <input type="text" ng-model="pony.edittedImgUrl">
+        </form>
+
+        <div ng-hide="pony.editting">
+            <h3>Posted by: {{pony.username}}</h3>
+            <h4>{{pony.name}}</h4>
+            <img src="{{pony.imgUrl}}">
+        </div>
+        <button type="button" ng-click="editPony(pony); pony.editting = !pony.editting">Edit</button>
+        <button type="button" ng-click ="deletePony(pony._id, pony)">Delete</button>
+
+
     </div>
+
 </div>
