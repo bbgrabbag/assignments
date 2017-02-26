@@ -1,8 +1,17 @@
-<div class="homeCtrl">
-    <form>
-    <input type="text" ng-model="newPony.name">
-    <input type="text" ng-model ="newPony.username">
-    <input type="text"ng-model ="newPony.imgUrl">
-        <a href="#!/favorites"><button type="button" ng-click="addPony(newPony)">Submit</button></a>
+
+  <div class="homeCtrl">
+   
+<div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+         <div id="pony-form">
+       <h2 id="form-title">Post your favorite pony, sucka!</h2>
+        <form>
+    <input type="text" ng-model="newPony.name" placeholder="Pony Name">
+    <input type="text" ng-model ="newPony.username" placeholder ="Username">
+    <input type="text"ng-model ="newPony.imgUrl" placeholder="Image URL">
+        <a href="#!/favorites"><button type="button" ng-click="addPony(newPony)">SUBMIT</button></a>
 </form>
+ </div>
+    </div>
+</div>
 </div>

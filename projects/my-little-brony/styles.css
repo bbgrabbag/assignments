@@ -1,0 +1,147 @@
+.container {
+    background-image: url("http://images6.fanpop.com/image/photos/37900000/Gangster-Octavia-my-little-pony-friendship-is-magic-37958292-441-500.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+}
+
+img {
+    padding: 5px;
+}
+
+button {
+    background-color: #e168db;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+    text-decoration: none;
+    font-size: 133%;
+}
+
+#pony-list {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+#pony-element {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    padding: 15px;
+    border: 2px solid grey;
+    margin: 5px;
+    background-color: aliceblue;
+    opacity: .8;
+}
+
+#pony-img {
+    width: 200px;
+    height: auto;
+}
+
+#edit-form {
+    position: absolute;
+    bottom: 10px;
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b9f0ea;
+    opacity: .8;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "EquestriaNeue";
+}
+
+h4,
+button,
+a {
+    font-family: "MLP-MagicisFriendship";
+}
+
+span,
+input {
+    font-family: "ArialRoundedMTBold";
+    color: coral;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+#home-link {
+    padding-right: 30px;
+}
+
+#favs-link {
+    padding-left: 30px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#pony-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    opacity: .8;
+    border-radius: 4px;
+}
+#pony-title{
+    color:limegreen;
+}
+
+#titles {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#edit-input {
+    display: flex;
+    flex-direction: column;
+}
+form{
+    padding-bottom: 10px;
+}
+@media(min-width: 400px){
+    #main-title{
+        font-size: 28px;
+    }
+}
+@media(min-width: 600px){
+    #main-title{
+        font-size: 36px;
+    }
+}
+@media(min-width: 1000px){
+    #main-title{
+        font-size: 48px;
+    }
+}
+
+@media(min-width: 400px){
+    #form-title{
+        font-size: 18px;
+    }
+}
+@media(min-width: 600px){
+    #form-title{
+        font-size: 28px;
+    }
+}

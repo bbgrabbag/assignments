@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <div class="jumbotron">
-      <h1>Yo Broseph. Bronies, Bro.</h1>
-       <a href="#!/home">Home</a>
-       <a href="#!/favorites">Favorites</a>
+   <div class="container">
+       <div class="jumbotron">
+      <h1 id="main-title">Yo Broseph. Bronies, Bro.</h1>
+       <div class="nav-bar">
+           <a id="home-link"href="#!/home">HOME</a>
+       <a id="favs-link"href="#!/favorites">FAVORITES</a>
+       </div>
    </div>
    
    <ng-view></ng-view> 
    
+   </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.js"></script>
