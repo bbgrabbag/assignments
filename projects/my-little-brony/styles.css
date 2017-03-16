@@ -119,14 +119,27 @@ input {
 form{
     padding-bottom: 10px;
 }
+@media(max-width: 600px){
+    #pony-inputs{
+        display:flex;
+        flex-direction: column;
+        align-content: center space-around;
+    }
+}
 @media(min-width: 400px){
     #main-title{
         font-size: 28px;
+    }
+    #form-title{
+        font-size: 18px;
     }
 }
 @media(min-width: 600px){
     #main-title{
         font-size: 36px;
+    }
+     #form-title{
+        font-size: 24px;
     }
 }
 @media(min-width: 1000px){
@@ -135,13 +148,5 @@ form{
     }
 }
 
-@media(min-width: 400px){
-    #form-title{
-        font-size: 18px;
-    }
-}
-@media(min-width: 600px){
-    #form-title{
-        font-size: 28px;
-    }
+
 }

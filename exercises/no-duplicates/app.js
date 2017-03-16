@@ -1,20 +1,24 @@
-var input = "sssiuhifwiywefuysusudfuy";
-var uniques = "";
-var duplicates = "";
+var anyString = "sorry for totally screwing that up lol";
+var uniqueString = "";
+var duplicateString = "";
 
 function filter(input) {
+    //loop through each letter of input:
     for (var i = 0; i < input.length; i++) {
-        //loop through each letter of input
-        if (duplicates.indexOf(input[i]) === -1) {
-            //checks to see if the current letter is already in the unique string
-            duplicates += input[i]
-                //adds duplicate letter
+        
+         //checks to see if the current letter is found in any index of the unique string:
+        if (uniqueString.indexOf(input[i]) === -1) {
+            
+            //if not found, indexOf (input[i]) will return -1, and we can concat it to the uniqueString:
+            uniqueString +=input[i]
         } else {
-            uniques += input[i]
-
+            //if found, indexOf (input[i]) will return the index at which it occupied and we can concat it to the duplicateString:
+            duplicateString += input[i]
         }
-
     }
-    console.log (duplicates, uniques)
-}
-filter(input);
+    console.log("duplicates: " + duplicate);
+    console.log("uniques: " + unique);
+};
+
+filter(anyString);
+

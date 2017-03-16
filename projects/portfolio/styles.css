@@ -1,0 +1,253 @@
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+.container {
+    height: 100vh;
+}
+
+.header-title {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    justify-content: center;
+    margin-top: : 20px;
+    border-right: 3px solid grey;
+}
+
+#profile-img {
+    animation: .75s fadeInRight ease;
+    width: 100px;
+    height: auto;
+    box-shadow:2px 2px 8px #003355;
+    opacity: .9;
+}
+
+.titles {
+    animation: .75s fadeInRight ease;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    animation: .75s fadeInRight ease;
+    padding-top: 30px;
+    display: flex;
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-links {
+    animation: .75s fadeInRight ease;
+    font-family: "Phosphate-Inline";
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right:10px;
+    transition: all ease .75s;
+    opacity: 1;
+    color: #556677;
+    background-color: white;
+}
+.menu-links:hover {
+    transition: all ease .5s;
+    opacity: .6;
+    color: white;
+    background-color: #556677;
+    border-radius: 100%;
+}
+
+.header {
+    animation: .75s fadeInRight ease;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    animation: .75s fadeInRight ease;
+    display: inline-block;
+    width: 40%;
+}
+
+#title {
+    animation: .75s fadeInRight ease;
+    color: silver;
+    font-family: "Phosphate-Inline";
+}
+
+#subtitle {
+    animation: .75s fadeInRight ease;
+    display: block;
+    font-size: 20px;
+}
+
+#email {
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+#about-me {
+    animation: .75s fadeInLeft ease;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 650px;
+}
+
+#resumeParent {
+    animation: .75s fadeInLeft ease;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume {
+    width: 100%;
+}
+#resume-btn{
+    box-shadow:2px 2px 8px #003355;
+    transition: all ease .75s;
+    opacity: 1;
+}
+#resume-btn:hover{
+    box-shadow:2px 2px 8px #003355;
+    opacity: .6;
+}
+
+#enlarge {
+    font-style: italic;
+    font-size: 12px;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.breaks {
+    animation: .75s fadeInRight ease;
+    margin-bottom: 0;
+}
+
+#git-hub {
+    animation: .75s fadeInRight ease;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+#email {
+    animation: .75s fadeInRight ease;
+    padding-right: 15px;
+}
+
+#linkedin {
+    animation: .75s fadeInRight ease;
+    padding-left: 10px;
+    padding-right:10px;
+    margin-left: 5px; 
+    margin-right: 5px;    
+    font-size: 25px;    
+}
+
+.footer {
+    padding-bottom: 50px;
+}
+
+fa,
+.fa-github {
+    transition: all ease .5s;
+    opacity: 1;
+    color: maroon;
+    background-color: white;
+}
+fa,
+.fa-github:hover {
+    opacity: .6;
+    color: white;
+    background-color: maroon;
+    border-radius: 100%;
+}
+
+fa,
+.fa-linkedin {
+    transition: all ease .5s;
+    opacity: 1;
+    color: darkgoldenrod;
+    background-color: white;
+}
+fa,
+.fa-linkedin:hover {
+    opacity: .6;
+    color: white;
+    background-color: darkgoldenrod;    
+    border-radius: 100%;    
+}
+
+
+@media (min-width: 400px) and (max-width: 770px) {
+    .header-title {
+        animation: .75s fadeInUp ease;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        margin-top: : 20px;
+        border-right: none;
+        border-bottom: 3px solid grey;
+    }
+    .titles {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+    }
+    #title {
+        padding-right: 20px;
+    }
+    #subtitle {
+        font-size: 20px;
+    }
+    #about-me {
+        animation: .75s fadeInRight ease;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 120px;
+    }
+    #resumeParent {
+        animation: .75s fadeInLeft ease;
+        height: 650px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #resume {
+        width: 100%;
+    }
+}
